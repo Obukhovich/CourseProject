@@ -1,2 +1,0 @@
-# CourseProject
-Payment List
