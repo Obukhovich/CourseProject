@@ -35,7 +35,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5S-fe-i4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.6" y="-303.59820089955025"/>
+            <point key="canvasLocation" x="-1759" y="1739"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="VBa-Tc-0cO">
+            <objects>
+                <viewController title="History" id="xCA-TM-wxV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AkC-qo-BGw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TLG-bd-JX1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TLG-bd-JX1" firstAttribute="leading" secondItem="M7z-I5-zZg" secondAttribute="leading" id="FCF-YR-Kuu"/>
+                            <constraint firstItem="TLG-bd-JX1" firstAttribute="top" secondItem="M7z-I5-zZg" secondAttribute="top" id="gRR-em-meE"/>
+                            <constraint firstItem="TLG-bd-JX1" firstAttribute="trailing" secondItem="M7z-I5-zZg" secondAttribute="trailing" id="ic4-JG-z6h"/>
+                            <constraint firstItem="TLG-bd-JX1" firstAttribute="bottom" secondItem="M7z-I5-zZg" secondAttribute="bottom" id="u9W-Ov-FmL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M7z-I5-zZg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhw-92-fZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-690.39999999999998" y="1737.481259370315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5F1-Ag-MTh">
@@ -66,9 +93,21 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUU-7O-YZk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Td-LK-Q0J">
+                                                <rect key="frame" x="148" y="750" width="79" height="30"/>
+                                                <state key="normal" title="History"/>
+                                                <connections>
+                                                    <segue destination="xCA-TM-wxV" kind="show" id="lTl-MS-oqV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3Td-LK-Q0J" secondAttribute="trailing" constant="148" id="3Kl-Ky-GnD"/>
+                                            <constraint firstItem="3Td-LK-Q0J" firstAttribute="leading" secondItem="ZUU-7O-YZk" secondAttribute="leading" constant="148" id="PFX-6s-vXk"/>
                                             <constraint firstAttribute="height" constant="800" id="uI4-s5-UOn"/>
+                                            <constraint firstAttribute="bottom" secondItem="3Td-LK-Q0J" secondAttribute="bottom" constant="20" id="zx6-aj-lfR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -106,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTV-ZJ-L4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="10.344827586206897"/>
+            <point key="canvasLocation" x="-690.39999999999998" y="822.18890554722645"/>
         </scene>
         <!--Expenses-->
         <scene sceneID="OBP-b3-Us2">
@@ -149,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMX-IR-Ne7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013.6" y="413.3433283358321"/>
+            <point key="canvasLocation" x="396" y="1888"/>
         </scene>
     </scenes>
 </document>
