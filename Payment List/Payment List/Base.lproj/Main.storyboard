@@ -13,7 +13,7 @@
         <!--Settings-->
         <scene sceneID="ewt-iy-KMB">
             <objects>
-                <viewController title="Settings" id="j7d-ok-2nF" userLabel="Settings" sceneMemberID="viewController">
+                <viewController title="Settings" id="j7d-ok-2nF" userLabel="Settings" customClass="SettingsViewController" customModule="Payment_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W67-AY-K9F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
         <!--History-->
         <scene sceneID="VBa-Tc-0cO">
             <objects>
-                <viewController title="History" id="xCA-TM-wxV" sceneMemberID="viewController">
+                <viewController title="History" id="xCA-TM-wxV" customClass="HistoryViewController" customModule="Payment_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AkC-qo-BGw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,7 +83,7 @@
         <!--Main screen-->
         <scene sceneID="RVq-Pp-yKW">
             <objects>
-                <viewController id="7ag-MU-U62" userLabel="Main screen" sceneMemberID="viewController">
+                <viewController id="7ag-MU-U62" userLabel="Main screen" customClass="MainViewController" customModule="Payment_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NCg-wf-Qj8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,7 +150,7 @@
         <!--Expenses-->
         <scene sceneID="OBP-b3-Us2">
             <objects>
-                <viewController title="Expenses" id="ANc-Rd-RGB" userLabel="Expenses" sceneMemberID="viewController">
+                <viewController title="Expenses" id="ANc-Rd-RGB" userLabel="Expenses" customClass="ExpensesViewController" customModule="Payment_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u7y-4H-RLT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
