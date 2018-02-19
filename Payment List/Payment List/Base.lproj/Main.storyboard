@@ -116,12 +116,15 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIU-rI-k1Q">
                                 <rect key="frame" x="0.0" y="64" width="375" height="736"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUU-7O-YZk">
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUU-7O-YZk">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-iC-WBW">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-iC-WBW">
                                                 <rect key="frame" x="62" y="8" width="255" height="37"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="255" id="PAm-VT-Ugu"/>
+                                                    <constraint firstAttribute="height" constant="37" id="Yhw-wb-udh"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -130,6 +133,7 @@
                                                 <rect key="frame" x="62" y="78" width="69" height="69"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                 <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="25"/>
                                                 <state key="normal" title="1"/>
                                                 <userDefinedRuntimeAttributes>
@@ -139,6 +143,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonOne:" destination="7ag-MU-U62" eventType="touchUpInside" id="n5G-ap-l06"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9r-ur-Otb">
                                                 <rect key="frame" x="156" y="78" width="69" height="69"/>
@@ -153,6 +160,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTwo:" destination="7ag-MU-U62" eventType="touchUpInside" id="Jwf-j0-RWr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sY1-4z-N1V">
                                                 <rect key="frame" x="248" y="78" width="69" height="69"/>
@@ -167,6 +177,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonThree:" destination="7ag-MU-U62" eventType="touchUpInside" id="Xl2-G1-mTw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNO-Wn-RpD">
                                                 <rect key="frame" x="62" y="160" width="69" height="69"/>
@@ -181,6 +194,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonFour:" destination="7ag-MU-U62" eventType="touchUpInside" id="z4J-Qg-jlO"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs9-cr-cG9">
                                                 <rect key="frame" x="155" y="160" width="69" height="69"/>
@@ -195,6 +211,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonFive:" destination="7ag-MU-U62" eventType="touchUpInside" id="QPg-5h-wNr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss4-DG-B15">
                                                 <rect key="frame" x="248" y="160" width="69" height="69"/>
@@ -209,6 +228,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonSix:" destination="7ag-MU-U62" eventType="touchUpInside" id="jAN-ql-nr8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZi-dm-LyY">
                                                 <rect key="frame" x="62" y="244" width="69" height="69"/>
@@ -223,6 +245,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonSeven:" destination="7ag-MU-U62" eventType="touchUpInside" id="bzR-mt-ier"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-I3-VdQ">
                                                 <rect key="frame" x="156" y="244" width="69" height="69"/>
@@ -237,6 +262,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonEight:" destination="7ag-MU-U62" eventType="touchUpInside" id="KTC-dx-ArM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU1-5F-fW3">
                                                 <rect key="frame" x="248" y="244" width="69" height="69"/>
@@ -251,6 +279,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonNine:" destination="7ag-MU-U62" eventType="touchUpInside" id="zu0-ca-dzV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QlI-hE-nL4">
                                                 <rect key="frame" x="156" y="328" width="69" height="69"/>
@@ -265,6 +296,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonZero:" destination="7ag-MU-U62" eventType="touchUpInside" id="EMw-O6-5BA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDn-U4-Gp4">
                                                 <rect key="frame" x="62" y="328" width="69" height="69"/>
@@ -279,6 +313,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonDot:" destination="7ag-MU-U62" eventType="touchUpInside" id="PpQ-Rb-7fd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycs-DE-4Ma">
                                                 <rect key="frame" x="248" y="328" width="69" height="69"/>
@@ -293,6 +330,9 @@
                                                         <color key="value" red="0.2361996958" green="0.65911321280000001" blue="0.69547441710000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonDelete:" destination="7ag-MU-U62" eventType="touchUpInside" id="n9t-1l-f7k"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Td-LK-Q0J">
                                                 <rect key="frame" x="148" y="750" width="79" height="30"/>
@@ -305,10 +345,14 @@
                                         <color key="backgroundColor" red="0.024335142229999999" green="0.1169040278" blue="0.14472723009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="3Td-LK-Q0J" secondAttribute="trailing" constant="148" id="3Kl-Ky-GnD"/>
+                                            <constraint firstItem="J8i-iC-WBW" firstAttribute="leading" secondItem="MPx-Sf-4cf" secondAttribute="leading" constant="62" id="LSI-wA-s1k"/>
                                             <constraint firstItem="3Td-LK-Q0J" firstAttribute="leading" secondItem="ZUU-7O-YZk" secondAttribute="leading" constant="148" id="PFX-6s-vXk"/>
+                                            <constraint firstItem="J8i-iC-WBW" firstAttribute="top" secondItem="MPx-Sf-4cf" secondAttribute="top" constant="8" id="jRw-ll-vtp"/>
+                                            <constraint firstItem="MPx-Sf-4cf" firstAttribute="trailing" secondItem="J8i-iC-WBW" secondAttribute="trailing" constant="58" id="oSa-NX-c7p"/>
                                             <constraint firstAttribute="height" constant="800" id="uI4-s5-UOn"/>
                                             <constraint firstAttribute="bottom" secondItem="3Td-LK-Q0J" secondAttribute="bottom" constant="20" id="zx6-aj-lfR"/>
                                         </constraints>
+                                        <viewLayoutGuide key="safeArea" id="MPx-Sf-4cf"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -388,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMX-IR-Ne7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="1888"/>
+            <point key="canvasLocation" x="396" y="1887.2563718140932"/>
         </scene>
     </scenes>
 </document>
