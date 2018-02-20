@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23BEF5D203C0D3600262D71 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BEF5C203C0D3600262D71 /* RoundButton.swift */; };
 		B2ED8FD02018CADF00BE8103 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8FCF2018CADF00BE8103 /* SettingsViewController.swift */; };
 		B2ED8FD22018CC3000BE8103 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8FD12018CC3000BE8103 /* HistoryViewController.swift */; };
 		B2ED8FD42018CD5500BE8103 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B23BEF5C203C0D3600262D71 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		B2ED8FCF2018CADF00BE8103 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B2ED8FD12018CC3000BE8103 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				B2F69277200E8073004EAF34 /* AppDelegate.swift */,
 				B2F69279200E8073004EAF34 /* MainViewController.swift */,
+				B23BEF5C203C0D3600262D71 /* RoundButton.swift */,
 				B2ED8FCF2018CADF00BE8103 /* SettingsViewController.swift */,
 				B2ED8FD12018CC3000BE8103 /* HistoryViewController.swift */,
 				B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */,
@@ -213,6 +216,7 @@
 			files = (
 				B2F69280200E8073004EAF34 /* Payment_List.xcdatamodeld in Sources */,
 				B2F6927A200E8073004EAF34 /* MainViewController.swift in Sources */,
+				B23BEF5D203C0D3600262D71 /* RoundButton.swift in Sources */,
 				B2F69278200E8073004EAF34 /* AppDelegate.swift in Sources */,
 				B2ED8FD22018CC3000BE8103 /* HistoryViewController.swift in Sources */,
 				B2ED8FD02018CADF00BE8103 /* SettingsViewController.swift in Sources */,
