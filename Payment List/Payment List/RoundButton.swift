@@ -18,6 +18,8 @@ class RoundButton: UIButton {
         didSet {
             if roundButton {
                 layer.cornerRadius = frame.height / 2
+                layer.borderColor = UIColor.white.cgColor
+                layer.borderWidth = 3.0
             }
         }
     }
@@ -25,7 +27,8 @@ class RoundButton: UIButton {
     override func prepareForInterfaceBuilder() {
         if roundButton {
             layer.cornerRadius = frame.height / 2
-        
+            layer.borderColor = UIColor.white.cgColor
+            layer.borderWidth = 3.0
         }
     }
 }
