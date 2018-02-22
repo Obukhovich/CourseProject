@@ -401,6 +401,59 @@
                                                     <segue destination="xCA-TM-wxV" kind="show" id="lTl-MS-oqV"/>
                                                 </connections>
                                             </button>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZPD-4p-ft8">
+                                                <rect key="frame" x="49" y="400" width="277" height="324"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="277" id="6Yl-Sm-43c"/>
+                                                    <constraint firstAttribute="height" constant="324" id="B37-aw-dPY"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="soj-9a-IxJ">
+                                                    <size key="itemSize" width="80" height="100"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="UbJ-Tl-Zsg" customClass="CustomCollectionViewCell" customModule="Payment_List" customModuleProvider="target">
+                                                        <rect key="frame" x="5" y="5" width="80" height="100"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="TVi-9L-OkH">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="80" id="Djc-Xz-JUk"/>
+                                                                        <constraint firstAttribute="height" constant="80" id="X4X-VZ-DsQ"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka0-bd-6oK">
+                                                                    <rect key="frame" x="0.0" y="80" width="80" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="80" id="G5L-kR-dyz"/>
+                                                                        <constraint firstAttribute="height" constant="20" id="aUT-tZ-a80"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstItem="TVi-9L-OkH" firstAttribute="centerX" secondItem="UbJ-Tl-Zsg" secondAttribute="centerX" id="5Me-Na-NCu"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ka0-bd-6oK" secondAttribute="bottom" id="XP5-G8-fxV"/>
+                                                            <constraint firstItem="Ka0-bd-6oK" firstAttribute="centerX" secondItem="UbJ-Tl-Zsg" secondAttribute="centerX" id="gUV-eY-8Kr"/>
+                                                            <constraint firstItem="TVi-9L-OkH" firstAttribute="top" secondItem="UbJ-Tl-Zsg" secondAttribute="top" id="pnK-he-Wtk"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="imageCell" destination="TVi-9L-OkH" id="lQ2-fy-1fg"/>
+                                                            <outlet property="labelCell" destination="Ka0-bd-6oK" id="foJ-7t-LLP"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.024335142229999999" green="0.1169040278" blue="0.14472723009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -408,10 +461,13 @@
                                             <constraint firstItem="tuv-Zb-PrM" firstAttribute="centerX" secondItem="ZUU-7O-YZk" secondAttribute="centerX" id="Dd0-Tc-WBE"/>
                                             <constraint firstItem="J8i-iC-WBW" firstAttribute="leading" secondItem="MPx-Sf-4cf" secondAttribute="leading" constant="62" id="LSI-wA-s1k"/>
                                             <constraint firstItem="3Td-LK-Q0J" firstAttribute="leading" secondItem="ZUU-7O-YZk" secondAttribute="leading" constant="148" id="PFX-6s-vXk"/>
+                                            <constraint firstItem="ZPD-4p-ft8" firstAttribute="leading" secondItem="MPx-Sf-4cf" secondAttribute="leading" constant="49" id="QcJ-AG-cmD"/>
                                             <constraint firstItem="tuv-Zb-PrM" firstAttribute="top" secondItem="J8i-iC-WBW" secondAttribute="bottom" constant="20" id="hop-TC-KPg"/>
                                             <constraint firstItem="J8i-iC-WBW" firstAttribute="top" secondItem="MPx-Sf-4cf" secondAttribute="top" constant="8" id="jRw-ll-vtp"/>
                                             <constraint firstItem="MPx-Sf-4cf" firstAttribute="trailing" secondItem="J8i-iC-WBW" secondAttribute="trailing" constant="58" id="oSa-NX-c7p"/>
+                                            <constraint firstItem="ZPD-4p-ft8" firstAttribute="top" secondItem="tuv-Zb-PrM" secondAttribute="bottom" constant="20" id="plB-Gq-SzC"/>
                                             <constraint firstAttribute="height" constant="800" id="uI4-s5-UOn"/>
+                                            <constraint firstItem="MPx-Sf-4cf" firstAttribute="trailing" secondItem="ZPD-4p-ft8" secondAttribute="trailing" constant="49" id="zJt-nP-tw0"/>
                                             <constraint firstAttribute="bottom" secondItem="3Td-LK-Q0J" secondAttribute="bottom" constant="20" id="zx6-aj-lfR"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="MPx-Sf-4cf"/>
@@ -451,6 +507,7 @@
                     </navigationItem>
                     <size key="freeformSize" width="375" height="800"/>
                     <connections>
+                        <outlet property="collectionView" destination="ZPD-4p-ft8" id="DTI-ZZ-aik"/>
                         <outlet property="outputLabel" destination="J8i-iC-WBW" id="Y0C-6z-dv2"/>
                     </connections>
                 </viewController>
@@ -502,4 +559,7 @@
             <point key="canvasLocation" x="396" y="1887.2563718140932"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Car" width="256" height="256"/>
+    </resources>
 </document>
