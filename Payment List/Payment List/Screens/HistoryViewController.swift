@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-// Example fill
-
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var historyTableView: UITableView!
+    
+    // Example fill (for presentation)
     
     let fieldName = ["Car", "Home", "Gym", "Holidays", "Car", "Phone", "Transport", "Gym", "Holidays", "Home", "Hairdresser", "Restaurant", "Gym", "Other", "Car", "Phone", "Home", "Gym", "Car", "Home", "Gym", "Holidays", "Car", "Phone", "Transport", "Gym", "Holidays", "Home", "Hairdresser", "Restaurant", "Gym", "Other", "Car", "Phone", "Home", "Gym", "Car"]
     

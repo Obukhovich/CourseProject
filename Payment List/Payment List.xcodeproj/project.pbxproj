@@ -12,6 +12,7 @@
 		B2ED8FD22018CC3000BE8103 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8FD12018CC3000BE8103 /* HistoryViewController.swift */; };
 		B2ED8FD42018CD5500BE8103 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */; };
 		B2EF476B203EE48C0026D929 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF476A203EE48C0026D929 /* CustomCollectionViewCell.swift */; };
+		B2EF476D20403C9F0026D929 /* MonthsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF476C20403C9F0026D929 /* MonthsViewController.swift */; };
 		B2F69278200E8073004EAF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F69277200E8073004EAF34 /* AppDelegate.swift */; };
 		B2F6927A200E8073004EAF34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F69279200E8073004EAF34 /* MainViewController.swift */; };
 		B2F6927D200E8073004EAF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F6927B200E8073004EAF34 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		B2ED8FD12018CC3000BE8103 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		B2EF476A203EE48C0026D929 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2EF476C20403C9F0026D929 /* MonthsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsViewController.swift; sourceTree = "<group>"; };
 		B2F69274200E8073004EAF34 /* Payment List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Payment List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F69277200E8073004EAF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F69279200E8073004EAF34 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -73,8 +75,9 @@
 			children = (
 				B2F69279200E8073004EAF34 /* MainViewController.swift */,
 				B2ED8FCF2018CADF00BE8103 /* SettingsViewController.swift */,
-				B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */,
 				B2ED8FD12018CC3000BE8103 /* HistoryViewController.swift */,
+				B2ED8FD32018CD5500BE8103 /* ExpensesViewController.swift */,
+				B2EF476C20403C9F0026D929 /* MonthsViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				B2F69280200E8073004EAF34 /* Payment_List.xcdatamodeld in Sources */,
 				B2F6927A200E8073004EAF34 /* MainViewController.swift in Sources */,
 				B2EF476B203EE48C0026D929 /* CustomCollectionViewCell.swift in Sources */,
+				B2EF476D20403C9F0026D929 /* MonthsViewController.swift in Sources */,
 				B23BEF5D203C0D3600262D71 /* RoundButton.swift in Sources */,
 				B2F69278200E8073004EAF34 /* AppDelegate.swift in Sources */,
 				B2ED8FD22018CC3000BE8103 /* HistoryViewController.swift in Sources */,
