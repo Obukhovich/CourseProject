@@ -14,7 +14,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var settingsTableView: UITableView!
     
     let fieldName = ["Edit expenses", "Set password", "Reset settings"]
-//    let share = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +31,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = settingsTableView.dequeueReusableCell(withIdentifier: "cell")
         
         cell?.textLabel?.text = fieldName[indexPath.row]
-//        cell?.detailTextLabel?.text = "\(share[indexPath.row])"
         
         return cell!
     }
